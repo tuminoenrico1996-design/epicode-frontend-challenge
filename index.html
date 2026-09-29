@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrazione - Music Streaming</title>
+</head>
+<body>
+  <h1>Registrati a Music Streaming</h1>
+
+  <form onsubmit="alert('Registrazione inviata!'); return false;">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
+
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <label for="data-nascita">Data di nascita:</label>
+    <input type="date" id="data-nascita" name="data-nascita" required>
+    <br><br>
+
+    <label for="telefono">Numero di telefono:</label>
+    <input type="number" id="telefono" name="telefono" required>
+    <br><br>
+
+    <fieldset>
+      <legend>Gusti musicali</legend>
+      <input type="checkbox" id="pop" name="gusti" value="Pop">
+      <label for="pop">Pop</label>
+
+      <input type="checkbox" id="rock" name="gusti" value="Rock">
+      <label for="rock">Rock</label>
+
+      <input type="checkbox" id="hip-hop" name="gusti" value="Hip Hop">
+      <label for="hip-hop">Hip Hop</label>
+
+      <input type="checkbox" id="rap" name="gusti" value="Rap">
+      <label for="rap">Rap</label>
+
+      <input type="checkbox" id="elettronica" name="gusti" value="Elettronica">
+      <label for="elettronica">Elettronica</label>
+
+      <input type="checkbox" id="indie" name="gusti" value="Indie">
+      <label for="indie">Indie</label>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Termini e condizioni</legend>
+      <input type="radio" id="accetto" name="termini" value="accetto" required>
+      <label for="accetto">Accetto i termini e le condizioni</label>
+    </fieldset>
+    <br>
+
+    <button type="submit">Invia registrazione</button>
+  </form>
+</body>
+</html>
